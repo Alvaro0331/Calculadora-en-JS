@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora en JS</title>
-    <!--<link
-      rel="stylesheet"
-      href="https://fonts.google.com/specimen/Press+Start+2P/tester?query=8+"
-    />-->
-    <link rel="stylesheet" href="Styles.css" />
-    <script src="Calculadora.js"></script>
-  </head>
-  <body>
-    <br />
-    <input type="text" id="Display" disabled /><br />
-    <br />
-    <button type="button" name="Numero" id="7" onclick="Concatenar(this.id)">7</button>
-    <button type="button" name="Numero" id="8" onclick="Concatenar(this.id)">8</button>
-    <button type="button" name="Numero" id="9" onclick="Concatenar(this.id)">9</button>
-    <button type="button" name="Operador" id="multiplicacion" onclick="setOperador('*')">x</button><br />
-    <button type="button" name="Numero" id="4" onclick="Concatenar(this.id)">4</button>
-    <button type="button" name="Numero" id="5" onclick="Concatenar(this.id)">5</button>
-    <button type="button" name="Numero" id="6" onclick="Concatenar(this.id)">6</button>
-    <button type="button" name="Operador" id="resta" onclick="setOperador('-')">-</button><br />
-    <button type="button" name="Numero" id="1" onclick="Concatenar(this.id)">1</button>
-    <button type="button" name="Numero" id="2" onclick="Concatenar(this.id)">2</button>
-    <button type="button" name="Numero" id="3" onclick="Concatenar(this.id)">3</button>
-    <button type="button" name="Operador" id="suma" onclick="setOperador('+')">+</button><br />
-    <button type="button" name="Numero" id="0"onclick="Concatenar(this.id)">0</button>
-    <button type="button" name="Clear" id="Clr" onclick="LimpiarDisplay()">C</button>
-    <button type="button" name="Operador" id="igual">=</button>
-    <button type="button" name="Operador" id="division" onclick="setOperador('/')">/</button>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora en JS</title>
+  <!--<link
+        rel="stylesheet"
+        href="https://fonts.google.com/specimen/Press+Start+2P/tester?query=8+"
+      />-->
+  <link rel="stylesheet" href="Styles.css" />
+  <script src="Calculadora.js"></script>
+</head>
+
+<body>
+  <br />
+  <input type="text" id="Display" disabled /><br />
+  <br />
+  <button type="button" name="Numero" id="7" onclick="Concatenar(this.id)">7</button>
+  <button type="button" name="Numero" id="8" onclick="Concatenar(this.id)">8</button>
+  <button type="button" name="Numero" id="9" onclick="Concatenar(this.id)">9</button>
+  <button type="button" name="Operador" id="multiplicacion" onclick="setOperador('*')">x</button><br />
+  <button type="button" name="Numero" id="4" onclick="Concatenar(this.id)">4</button>
+  <button type="button" name="Numero" id="5" onclick="Concatenar(this.id)">5</button>
+  <button type="button" name="Numero" id="6" onclick="Concatenar(this.id)">6</button>
+  <button type="button" name="Operador" id="resta" onclick="setOperador('-')">-</button><br />
+  <button type="button" name="Numero" id="1" onclick="Concatenar(this.id)">1</button>
+  <button type="button" name="Numero" id="2" onclick="Concatenar(this.id)">2</button>
+  <button type="button" name="Numero" id="3" onclick="Concatenar(this.id)">3</button>
+  <button type="button" name="Operador" id="suma" onclick="setOperador('+')">+</button><br />
+  <button type="button" name="Numero" id="0" onclick="Concatenar(this.id)">0</button>
+  <button type="button" name="Clear" id="Clr" onclick="LimpiarDisplay()">C</button>
+  <button type="button" name="Operador" id="igual" onclick="Calcular()">=</button>
+  <button type="button" name="Operador" id="division" onclick="setOperador('/')">/</button>
+</body>
+
 </html>

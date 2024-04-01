@@ -27,3 +27,26 @@ function LimpiarDisplay() {
     console.log(Operador1);
     console.log(Operador2);
 }
+
+function Calcular() {
+    Operador2 = document.getElementById('Display').value;
+    let Resultado;
+    switch (ActualOperador) {
+        case '+':
+            Resultado = parseFloat(Operador1) + parseFloat(Operador2);
+            break;
+        case '-':
+            Resultado = parseFloat(Operador1) - parseFloat(Operador2);
+            break;
+        case '*':
+            Resultado = parseFloat(Operador1) * parseFloat(Operador2);
+            break;
+        case '*':
+            Resultado = parseFloat(Operador1) / parseFloat(Operador2);
+            break;
+        default:
+            Resultado = 'Syntax Error';
+    }
+    //Mostrar resultado en consola
+    document.getElementById('Display').value = Resultado;
+}
