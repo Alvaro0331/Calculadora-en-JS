@@ -41,7 +41,7 @@ function Calcular() {
         case '*':
             Resultado = parseFloat(Operador1) * parseFloat(Operador2);
             break;
-        case '*':
+        case '/':
             Resultado = parseFloat(Operador1) / parseFloat(Operador2);
             break;
         default:
